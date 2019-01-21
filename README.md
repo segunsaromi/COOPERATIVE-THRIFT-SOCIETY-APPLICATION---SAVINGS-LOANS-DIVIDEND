@@ -1,5 +1,5 @@
 # COOPERATIVE-THRIFT-SOCIETY-APPLICATION---SAVING-LOANS-DIVIDEND
-This application is for cooperative and thrift society and it allows for registration, savings, loans and dividend sharing. I have been playing around this code for a since last month and hope to put perfection on it like creating a connect file rather than refrencing it on every page and using more functions to minmize coding. 
+This application is for cooperative and thrift society and it allows for registration, savings, loans and dividend sharing. 
 
 Firstly i will suggest you upload the sql file. Remove .sql extension and the remaining is the database name you can use to create the database after which you should upload the sql file in there. The database has some test data but you can creat yours while using the application.
 
@@ -20,3 +20,5 @@ After applying, they are required to take note of their application number displ
 After they have successfully signed up they can now sign in into the portal to complete their information (profile, picture, bank details etc.)  and carry out several other task (loan application, guarantee approval etc.)
 
 This application has lots more features and there are lots more feature i want to add to it but at the moment i am busy with other development and would visit it soon.
+
+Please note:  I have been playing around this code for a while and hope to put perfection on it like creating a connect file rather than referencing it on every page and using more functions to minmize coding.
