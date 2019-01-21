@@ -117,7 +117,7 @@ $detailab = mysqli_query($conn,"SELECT * FROM loanrequest_tbl WHERE loan_guarant
 
 $detailac = mysqli_query($conn,"SELECT * FROM loanrequest_tbl WHERE loan_guarantor3='$userRow[userName]'");
 
-while (($detailfetchc=mysqli_fetch_array($detailc)) or ($detailfetcha=mysqli_fetch_array($detaila)) or ($detailfetchab=mysqli_fetch_array($detailab)))
+while (($detailfetchc=mysqli_fetch_array($detailac)) or ($detailfetcha=mysqli_fetch_array($detaila)) or ($detailfetchab=mysqli_fetch_array($detailab)))
 
 {?>  
 <?php

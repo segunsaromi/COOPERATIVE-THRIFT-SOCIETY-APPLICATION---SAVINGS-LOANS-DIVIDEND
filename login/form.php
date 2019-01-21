@@ -92,7 +92,7 @@ $playernumber = 'SID'.$unique_ref;
 
 	@$passave=@mysqli_query($conn,"SELECT * FROM savingamount_tbl WHERE cust_id='$userRow[userName]' ORDER BY SN DESC");
 	@$userPassave=@mysqli_fetch_array($passave);
-	if ($userPassave['savings_status'] == '0') {$cust_savings = $userPassave['cust_savings']."-"."NOT APPROVED";} else {
+	if ($userPassave['savings_status'] == '0') {$cust_savings1 = $userPassave['cust_savings']." - "."NOT APPROVED"; $cust_savings = $userPassave['cust_savings'];} else {
 	$cust_savings = $userPassave['cust_savings'];}
 
 ?>
@@ -207,13 +207,13 @@ $playernumber = 'SID'.$unique_ref;
                 
 				<div class="form-group">							  <label>Staff Number</label>
 
-					AD/R/S.<input type="text" onkeyup="this.value = this.value.toUpperCase();" pattern="[0-9].{3}" maxlength="4" class="form-control" name="cust_staffid" id="lname" placeholder="<?php if (@$cust_staffid <> ""){echo @$cust_staffid;} else {echo "Enter Last 4 digit of your staff number";}?>" value="<?php echo @$cust_staffid; ?>" required />
+					AD/R/S.<input type="text" onkeyup="this.value = this.value.toUpperCase();" pattern="[0-9].{3}" maxlength="4" class="form-control" name="cust_staffid" id="lname" placeholder="<?php if (@$cust_staffid <> ""){echo substr("@$cust_staffid",-4);} else {echo "Enter Last 4 digit of your staff number";}?>" value="<?php echo substr("@$cust_staffid",-4); ?>" required />
 				</div>
 
 
-				<div class="form-group">		<input name="savings_id" type="hidden" value="<?php echo $playernumber; ?>">					  <label>Monthly Savings</label><input name="savings_date" type="hidden" value="<?php echo date('Y-m-d'); ?>">
+				<div class="form-group">		<input name="savings_id" type="hidden" value="<?php echo $playernumber; ?>">					  <label>Monthly Savings (<?php echo @$cust_savings1; ?>)</label><input name="savings_date" type="hidden" value="<?php echo date('Y-m-d'); ?>">
 
-					<input type="text" onkeyup="this.value = this.value.toUpperCase();" pattern="^[0-9 -]+$" class="form-control" name="cust_savings" id="lname" placeholder="<?php if (@$cust_savings <> ""){echo @$cust_savings;} else {echo "Monthly Savings";}?>" value="<?php echo @$cust_savings; ?>" required />
+					<input type="text" onkeyup="this.value = this.value.toUpperCase();" pattern="^[0-9 -]+$" class="form-control" name="cust_savings" id="lname" title="" placeholder="<?php if (@$cust_savings <> ""){echo @$cust_savings;} else {echo "Monthly Savings";}?>" value="<?php echo @$cust_savings; ?>" required />
 				</div>
 
 
