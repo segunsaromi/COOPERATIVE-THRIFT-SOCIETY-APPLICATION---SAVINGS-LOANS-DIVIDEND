@@ -7,7 +7,7 @@ I used root and no password. So for the purpose of this application testing you 
 
 Secondly create a folder and name it whatever you want, only remeber that the name will constitute the url for accessing the application from your browser. Upload the two folders into the folder you created and thats all.
 
-I have not yet created the module to add admin so i added admin login detail manually from the database and you can find it in coop_admin. The password i used is "asdfghjkl". In this application, the admin is a memeber f the cooprative society. You can make any memeber admin by copying their application details and insert it into coop-admin table.
+I have not yet created the module to add admin so i added admin login detail manually from the database and you can find it in coop_admin table. The password i used is "asdfghjkl". In this application, the admin is a memeber f the cooprative society. You can make any memeber admin by copying their application details and insert it into coop-admin table.
 
 The admin login is used to approve membership, approve savings, approve loans, edit record from admin level, share dividend and lots more. you can play around the menus created and see the effect. for the brevity of time i will leave it here and later update this with more information.
 
