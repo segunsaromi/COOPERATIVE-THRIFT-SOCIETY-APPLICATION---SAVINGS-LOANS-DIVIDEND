@@ -26,3 +26,5 @@ This application has lots more features and there are lots more feature i want t
 Please note:  I have been playing around this code for a while and hope to put perfection on it like connect file usage, commenting and using more functions to minmize coding.
 
 For a proper coding programme, please check my 4th repository there i used proper coding technique methods and structure (e.g. comment, functions, naming, indent etc.) https://github.com/segunsaromi/GREENWEB-FINANCE-MANAGEMENT-APPLICATION 
+
+This application is fully based on web technology, it requires a PHP-capable webserver and a MySQL database. For testing purposes, using XAMPP is recommended
